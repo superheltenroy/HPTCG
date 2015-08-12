@@ -1,0 +1,117 @@
+- Let player take turns.
+	- Let player take actions.
+		- Can be used to draw cards.
+		- Restrict number of actions to 2.
+	- Lesson functionality
+		- implement one lesson type
+		- count lessons in play
+		- implement several lesson types
+		- make deck of lessons
+	- Creature functionality
+		- implement one creature card
+			- name, text, cost, damage, health, functionality
+		- calculate creature damage
+		- add creature to deck
+	- implement turn phases
+		- test draw card
+		- test creature damage phase
+		- test actions
+		- test endturn
+- Let both players take alternating turns
+	- test two turns
+	- implement damage
+		- implement creature damage
+		- implement spell damage
+	- implement lose condition
+		- test super spell card or automonsters
+	- make simple AI: priotitize: Lesson>Creature>Spell>other>Draw Card
+		- run simulation.
+	- Spell functionality
+		- implement one spell card
+			- name, text, cost, functionality
+		- put used spell in discard pile
+		- add spell card to deck
+
+Success! 02.08.2015
+Implemented:
+	- General card information: Cost, kind, card number, series.
+	- All lesson types with a mana functionality
+	- Five creature cards with no extra abilities, working in game.
+	- Spell card: Obliviate, opponent discards hand.
+	- Simple AI, plays random card it can afford, or draws card. Works allright. Stable.
+
+
+02.08.2015
+To implement:
+	- Added card costs functionality:
+		- mechanics handling added costs like "discard lesson of type"
+		- mechanics handling added costs like "discard general card of type"	
+	- Delayed Action functionality:
+		- flags for several new kinds of spells. 
+		- some working delayed action functionality
+			- Spells affecting a later phase
+	- Passive effects functionality
+		- Passive effects handler
+			- Function or class that goes through all cards with passive effects
+			- Function or class (same) that removes passive effect at the right time
+		- some passive card ability functionality
+			- creatures with permanent abilities (unicorn)
+	- Implement more cards in general, of types spells and creatures
+		- Implement extra card flags or descriptors
+		- Implement healing functionality
+	- Item functionality
+		- Implement simple item
+		- Implement simple item with mana provision
+			- Implement Cauldrons or Wands
+		- Implement simple item with passive effect
+			- Implement Invisibility Cloak?
+		- Implement simple item with delayed effect?
+			- something draw card?
+			- Implement Winged Keys
+	- Character functionality
+		- Implement simple character
+			- Action cost = 2
+		- Implement character with mana
+		- Implement working character with passive effect
+			- Hermione, Hagrid
+		- Implement working character with active effect
+			- Snape, Harry
+	- Adventure functionality
+		- Implement simple adventure:
+			- action cost 2
+			- is inplay 3 turns, then remove and reward.
+		- Implement adventure and check with passive to solve:
+		- Implement adventure with active to solve:
+			- Diagon Alley
+				- Implement skip action possibility for solving adventures.
+	- More cards
+		- Implement all cards in basic Hermione and Malfoy decks.
+
+	- Future Implementations:
+		- More cards
+		- User functionality
+			- One player vs AI
+			- Two players on same screen
+		- GUI
+			- Tkinter?
+		- Network play
+		- Better AI
+		- Later series:
+			- More cards
+			- Location type
+			- Match type
+
+
+
+
+
+
+
+
+- Enrich spell and creature farm, some more of each.
+- Implement other card types
+	- Character functionality
+		- implement two character cards
+			- name, text, functionality
+		- make character part of deck.
+ 
